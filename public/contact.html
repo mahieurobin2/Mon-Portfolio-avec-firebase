@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Robin MAHIEU</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">ROBIN MAHIEU</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="projets.html">PROJETS</a></li>
+          <li><a href="formations.html">FORMATIONS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container pt">
+    <div class="row mt">
+      <div class="col-lg-6 col-lg-offset-3 centered">
+        <h3>ME CONTACTER</h3>
+        <hr>
+        <p></p>
+      </div>
+    </div>
+    <div class="row mt">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+            <div class="form-group">
+              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Nom" data-rule="minlen:4" data-msg="Le nom doit posséder au moins 4 caractères" >
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Email" data-rule="email" data-msg="veuillez entrer un mail valide">
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Objet" data-rule="minlen:4" data-msg="veuillez entrer un objets d'au moins 8 caractères">
+              <div class="validate"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="contact-message" placeholder="Votre message" rows="5" data-rule="required" data-msg="veuillez entrer votre message"></textarea>
+              <div class="validate"></div>
+            </div>
+
+            <div class="loading"></div>
+            <div class="error-message"></div>
+            <div class="sent-message">Votre message a bien été envoyé. Merci !</div>
+
+            <div class="form-send">
+              <button type="submit" class="btn btn-large">Envoyer</button>
+            </div>
+
+          </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>INFORMATIONS</h4>
+          <p>
+           29 Rue René Char </br>59229 TETEGHEM COUDEKERQUE-VILLAGE<br/> 07 82 29 11 25</br>robin.mahieu.pro@gmail.com
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h4>MES LIENS</h4>
+          <p>
+            <a href="https://www.linkedin.com/in/robin-mahieu-63643420b/">LinkedIn</a><br/>
+            <a href="https://github.com/mahieurobin2">GitHub</a><br/>
+            <a href="https://www.behance.net/robinmahieu">Behance</a>
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>ROBIN MAHIEU</strong>. Tout droits résérvés
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/php-mail-form/validate.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
